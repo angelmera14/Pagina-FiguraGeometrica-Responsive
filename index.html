@@ -33,8 +33,8 @@
                 id="inputSide"
                 placeholder="Ingrese los lados"
                 >
-                <button class="box-main__btn" type="button" onclick="calculatePerimSquare()">Perimetro</button>
-                <button class="box-main__btn" type="button" onclick="calculateAreaSquare()">Area</button>
+                <button class="box-main__btn" type="button" id="btnPerimSquare">Perimetro</button>
+                <button class="box-main__btn" type="button" id="btnAreaSquare">Area</button>
             </div>
         </div>
         <div class="box">
@@ -46,12 +46,12 @@
                 <input class="box-main__input" type="number" name="inputSide1" id="inputSide1" placeholder="Ingrese el lado 01">
                 <input class="box-main__input" type="number" name="inputSide2" id="inputSide2" placeholder="Ingrese el lado 02">
                 <input class="box-main__input" type="number" name="inputSide3" id="inputSide3" placeholder="Ingrese el lado 03">
-                <button class="box-main__btn" type="button" onclick="calculatePerimTriangle()">Perimetro</button>
+                <button class="box-main__btn" type="button" id="btnPerimTriangle">Perimetro</button>
 
                 <P class="box-main__text">¿Cuanto mide cada lado de tu triangulo?</P>
                 <input class="box-main__input" type="number" name="inputBase" id="inputBase" placeholder="Ingrese la base">
                 <input class="box-main__input" type="number" name="inputHeight" id="inputHeight" placeholder="Ingrese la altura">
-                <button class="box-main__btn" type="button" onclick="calculateAreaTriangle()">Area</button>
+                <button class="box-main__btn" type="button" id="btnAreaTriangle">Area</button>
             </div>
         </div>
         <div class="box">
@@ -61,12 +61,12 @@
             <div class="box-main">
                 <P class="box-main__text">¿Cuanto mide el radio de tu circulo?</P>
                 <input class="box-main__input" type="number" name="inputRadio" id="inputRadio" placeholder="Ingrese radio">
-                <button class="box-main__btn" type="button" onclick="calculatePerimCircle()">Perimetro</button>
-                <button class="box-main__btn" type="button" onclick="calculateAreaCircle()">Area</button>
-                <button class="box-main__btn" type="button" onclick="calculateDiameCircle()">Diametro</button>
+                <button class="box-main__btn" type="button" id="btnPerimCircle">Perimetro</button>
+                <button class="box-main__btn" type="button" id="btnAreaCircle">Area</button>
+                <button class="box-main__btn" type="button" id="btnDiamCircle">Diametro</button>
             </div>
         </div>
     </section>
-    <script src="JS/geometric.js"></script>
+    <script src="JS/geometric-min.js"></script>
 </body>
 </html>
