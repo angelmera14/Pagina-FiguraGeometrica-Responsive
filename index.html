@@ -16,9 +16,7 @@
     </header>
     <!--Respuestas-->
     <div class="answer">
-        <p>
-            El area del cuadrado es : 45 cm
-        </p>
+        <p id="result"></p>
     </div>
     <!--Seccion de cajas-->
     <section class="figure">
@@ -31,12 +29,12 @@
                 <input 
                 class="box-main__input" 
                 type="number" 
-                name="side" 
-                id="side"
+                name="inputSide" 
+                id="inputSide"
                 placeholder="Ingrese los lados"
                 >
-                <button class="box-main__btn" type="button">Perimetro</button>
-                <button class="box-main__btn" type="button">Area</button>
+                <button class="box-main__btn" type="button" onclick="calculatePerimSquare()">Perimetro</button>
+                <button class="box-main__btn" type="button" onclick="calculateAreaSquare()">Area</button>
             </div>
         </div>
         <div class="box">
@@ -45,15 +43,15 @@
             </div>
             <div class="box-main">
                 <P class="box-main__text">¿Cuanto mide cada lado de tu triangulo?</P>
-                <input class="box-main__input" type="number" name="side" id="side" placeholder="Ingrese el lado 01">
-                <input class="box-main__input" type="number" name="side" id="side" placeholder="Ingrese el lado 02">
-                <input class="box-main__input" type="number" name="side" id="side" placeholder="Ingrese el lado 03">
-                <button class="box-main__btn" type="button">Perimetro</button>
+                <input class="box-main__input" type="number" name="inputSide1" id="inputSide1" placeholder="Ingrese el lado 01">
+                <input class="box-main__input" type="number" name="inputSide2" id="inputSide2" placeholder="Ingrese el lado 02">
+                <input class="box-main__input" type="number" name="inputSide3" id="inputSide3" placeholder="Ingrese el lado 03">
+                <button class="box-main__btn" type="button" onclick="calculatePerimTriangle()">Perimetro</button>
 
                 <P class="box-main__text">¿Cuanto mide cada lado de tu triangulo?</P>
-                <input class="box-main__input" type="number" name="side" id="side" placeholder="Ingrese la base">
-                <input class="box-main__input" type="number" name="side" id="side" placeholder="Ingrese la altura">
-                <button class="box-main__btn" type="button">Area</button>
+                <input class="box-main__input" type="number" name="inputBase" id="inputBase" placeholder="Ingrese la base">
+                <input class="box-main__input" type="number" name="inputHeight" id="inputHeight" placeholder="Ingrese la altura">
+                <button class="box-main__btn" type="button" onclick="calculateAreaTriangle()">Area</button>
             </div>
         </div>
         <div class="box">
@@ -62,12 +60,13 @@
             </div> 
             <div class="box-main">
                 <P class="box-main__text">¿Cuanto mide el radio de tu circulo?</P>
-                <input class="box-main__input" type="number" name="side" id="side" placeholder="Ingrese radio">
-                <button class="box-main__btn" type="button">Perimetro</button>
-                <button class="box-main__btn" type="button">Area</button>
-                <button class="box-main__btn" type="button">Diametro</button>
+                <input class="box-main__input" type="number" name="inputRadio" id="inputRadio" placeholder="Ingrese radio">
+                <button class="box-main__btn" type="button" onclick="calculatePerimCircle()">Perimetro</button>
+                <button class="box-main__btn" type="button" onclick="calculateAreaCircle()">Area</button>
+                <button class="box-main__btn" type="button" onclick="calculateDiameCircle()">Diametro</button>
             </div>
         </div>
     </section>
+    <script src="JS/geometric.js"></script>
 </body>
 </html>
